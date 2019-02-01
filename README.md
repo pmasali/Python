@@ -1,2 +1,2 @@
 # Python
-Useful Python code chunks for practice
+Useful code chunks for Python
