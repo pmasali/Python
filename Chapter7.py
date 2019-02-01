@@ -1,28 +1,28 @@
-# xfile = '/Users/prateekmasali/Desktop/Git/Python/words.txt'
-# try:
-#     xfile = open(xfile)
-# except:
-#     print('File cannot be opened')
-#     quit()
+xfile = '/Users/prateekmasali/Desktop/Git/Python/words.txt'
+try:
+    xfile = open(xfile)
+except:
+    print('File cannot be opened')
+    quit()
 
 #task1:
-# for line in xfile:
-#     line = line.rstrip()
-#     print(line.upper())
+for line in xfile:
+    line = line.rstrip()
+    print(line.upper())
 
 #task2:
-# for line in xfile:
-#     if 'to' in line:#line.find('From:'):
-#         print(line.rstrip())
-#     else:
-#         print ('1')
+for line in xfile:
+    if 'to' in line:#line.find('From:'):
+        print(line.rstrip())
+    else:
+        print ('1')
 
 #task3:
-# fname = input("Enter file name: ")
-# fh = open(fname)
-# for line in fh:
-#     line = line.rstrip()
-#     print(line.upper())
+fname = input("Enter file name: ")
+fh = open(fname)
+for line in fh:
+    line = line.rstrip()
+    print(line.upper())
 
 #Task 7.2:
 
