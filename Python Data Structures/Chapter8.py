@@ -47,7 +47,7 @@ for i in words:
     days.append(i[2])
 print(days)
 
-#6: 8.4 assignment
+#6:
 # /Users/prateekmasali/Desktop/Git/Python/romeo.txt
 xfile = input("Enter the file:")
 fh = open(xfile)
@@ -61,7 +61,7 @@ for line in fh:
 lst.sort()
 print(lst)
 
-#7: 8.5 Assignment
+#7: 
 # /Users/prateekmasali/Desktop/Git/Python/mbox-short.txt
 xfile = input("Enter the file:")
 fh = open(xfile)

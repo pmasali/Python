@@ -24,7 +24,7 @@ for line in fh:
     line = line.rstrip()
     print(line.upper())
 
-#Task 7.2:
+#Task4:
 
 fname = input("Enter file name: ")
 fh = open(fname)
