@@ -59,15 +59,81 @@
 # A=[A,B,C,D]	    B=[1,2,3,4]	C=[(4,A),(3,B),(2,C),(D,1)]    D={A:4,B:4,C:4,D:1}
 # Code to produce C from A and B
 
-A = ['A','B','C','D']	    
-B = [1,2,3]
+# A = ['A','B','C','D']	    
+# B = [1,2,3,4]
 
-def ListCD():
-    C = []
-    D = {}
-    # B.reverse()
-    C = list(zip(reversed(B),A))
-    D = dict(zip(A,reversed(B)))
-    return C, D
+# def ListCD():
+#     C = []
+#     D = {}
+#     # B.reverse()
+#     C = list(zip(reversed(B),A))
+#     D = dict(zip(A,reversed(B)))
+#     return C, D
 
-print(ListCD())
+# print(ListCD())
+
+# print(B.sort())
+
+# import random
+
+# random.seed(1)
+# print('random number:',random.randint(95,105))
+# print('random number:',random.randint(95,105))
+
+# random.seed(10)
+# print('random number:',random.randint(95,105))
+# print('random number:',random.randint(95,105))
+
+# random.seed(1)
+# print('random number:',random.randint(95,105))
+# print('random number:',random.randint(95,105))
+
+import random
+import time
+import sys
+
+# print(dir())
+# print(sys.argv[0])
+# print(int(sys.argv[1]))
+
+random.seed()
+# randomList = []
+# for a in range(N):
+#     print(randomList.append(random.randint(0,10)))
+
+
+def genList (size):
+    randomList = []
+     
+    #initialize random list with values between 0 and 100
+    for i in range(size):
+        randomList.append(random.randint(0,i))
+         
+    return randomList
+#return the sum of all elements in the list
+#This is the same as "return sum(inList)" but in long form for readability and emphasis
+def sumList(inList):
+    finalSum = 0
+     
+    #iterate over all values in the list, and calculate the cummulative sum
+    for value in inList:
+        finalSum = finalSum + value
+    return finalSum
+if __name__ == '__main__':
+    if len(sys.argv) == 2 and sys.argv[1].isdigit():
+        N = int(sys.argv[1])
+        #mark the start time
+        startTime = time.time()
+        #create a random list of N integers
+        myList = genList (N)
+        finalSum = sumList(myList)
+        #mark the end time
+        endTime = time.time()
+        #calculate the total time it took to complete the work
+        workTime =  endTime - startTime
+         
+        #print results
+        print("The job took ", str(workTime), " seconds to complete")
+        print("The final sum was: ", str(finalSum))
+    else:
+        exit(-1)

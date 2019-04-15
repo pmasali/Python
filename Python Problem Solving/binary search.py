@@ -96,6 +96,6 @@ def solution(A):
     
     
             
-    return A
+    # return A
 
 print(solution("222-22 2  22---22222"))
