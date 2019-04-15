@@ -6,4 +6,8 @@ def pig_latin(wrd):
         pig_word = wrd[1:] + first_letter + 'ay'
     return pig_word
 
-print(pig_latin('word'))
+# print(pig_latin('word'))
+
+print(list(range(2,22,2)))
+
+print(dir())
