@@ -1,0 +1,3 @@
+my name is prateek
+my name is prateek
+this is a mapper reducer code
