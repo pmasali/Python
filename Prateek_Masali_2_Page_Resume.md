@@ -6,7 +6,6 @@ New York, NY | (646) 508-1922 | prateek.masali@outlook.com | linkedin.com/in/pra
 
 ---
 
-# PAGE 1
 
 <table>
 <tr>
@@ -125,7 +124,6 @@ projected annual legacy-platform savings
 
 <div style="page-break-after: always;"></div>
 
-# PAGE 2
 
 <table>
 <tr>
